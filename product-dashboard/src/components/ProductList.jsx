@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 
-function ProductList({ products, onRemove }) {
+function ProductList({ products }) {
 const inStockProducts = products.filter((product) => product.inStock);
 
 return (
@@ -12,7 +12,6 @@ products.map((product) => (
 <ProductCard
 key={product.id}
 product={product}
-onRemove={onRemove}
 />
 ))
 )}
@@ -21,4 +20,3 @@ onRemove={onRemove}
 }
 
 export default ProductList;
-

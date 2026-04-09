@@ -1,0 +1,13 @@
+.card {
+border: 2px solid pink;
+padding: 20px;
+margin: 15px;
+border-radius: 12px;
+background-color: white;
+box-shadow: 2px 2px 10px lightgray;
+}
+
+.outOfStock {
+background-color: lightgray;
+opacity: 0.7;
+}

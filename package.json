@@ -11,8 +11,7 @@
     "preview": "vite preview",
     "server": "json-server --watch db.json --port 4000",
     "lint": "eslint .",
-    "test": "vitest",
-    "test:watch": "vitest --watch"
+    "test": "jest"
   },
   "dependencies": {
     "@emotion/react": "^11.0.0",
@@ -23,8 +22,10 @@
     "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
-    "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
     "@eslint/js": "^9.9.0",
+    "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
@@ -36,6 +37,8 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-environment-jsdom": "^30.3.0",
     "json-server": "^1.0.0-beta.2",
     "vite": "^5.4.1",
     "vitest": "^2.0.5",
