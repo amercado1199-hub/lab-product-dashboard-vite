@@ -1,12 +1,12 @@
-import styles from "../styles/ProductCard.module.css";
+import styles from "../styles/ProductCard.css";
 
 function ProductCard({ product, onRemove }) {
 return (
 <div
 className={
 product.inStock
-? styles.card
-: `${styles.card} ${styles.outOfStockClass}`
+? "card"
+: "card outOfStockClass"
 }
 >
 <h2>{product.name}</h2>
